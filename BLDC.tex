@@ -1,16 +1,32 @@
-\documentclass[12pt, a4paper]{scrreprt}
+\documentclass[12pt, a4paper, twoside]{scrreprt}
 
-\usepackage[margin=2.5cm]{geometry}
-\usepackage[ngerman]{babel}
-\usepackage{hyperref}
+\KOMAoptions{
+  bibliography=totoc, % Prints bibliography in table of contents
+}
+
+\usepackage{scrlayer-scrpage}
+\setkomafont{pageheadfoot}{\sffamily\footnotesize}
+\setkomafont{pagination}{}
+\ofoot*{Seite~\pagemark}
+
+\usepackage[margin=2.5cm]{geometry} % Sets page margins to be of 2.5cm
+\usepackage[ngerman]{babel} % Sets local preferences for german region
+\usepackage[style=authoryear-ibid]{biblatex} % package for citation management
+\usepackage{svg}
+\usepackage{hyperref} % Useful for Links
+
+\addbibresource{bibliography.bib}
 
 \input{Titel}
 
 \begin{document}
 
+\pagenumbering{Roman}
 \maketitle
 \tableofcontents
+\clearpage
 
+\pagenumbering{arabic}
 \input{Einleitung}
 \input{Namensgebung}
 \input{TechnischeVarianten}
@@ -18,4 +34,11 @@
 \input{Anwendungsbeispiel}
 \input{Fazit}
 
+\printbibliography%
+
 \end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
