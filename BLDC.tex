@@ -1,7 +1,7 @@
 \documentclass[12pt, a4paper, twoside]{scrreprt}
 
 \KOMAoptions{
-  bibliography=totoc, % Prints bibliography in table of contents
+  bibliography=totoc,                        % Prints bibliography in table of contents
 }
 
 \usepackage{scrlayer-scrpage}
@@ -9,11 +9,11 @@
 \setkomafont{pagination}{}
 \ofoot*{Seite~\pagemark}
 
-\usepackage[margin=2.5cm]{geometry} % Sets page margins to be of 2.5cm
-\usepackage[ngerman]{babel} % Sets local preferences for german region
+\usepackage[margin=2.5cm]{geometry}          % Sets page margins to be of 2.5cm
+\usepackage[ngerman]{babel}                  % Sets local preferences for german region
 \usepackage[style=authoryear-ibid]{biblatex} % package for citation management
-\usepackage{svg}
-\usepackage{hyperref} % Useful for Links
+\usepackage{svg}                             % included for svg inclusion of HSE-Logo
+\usepackage{hyperref}                        % Useful for Links
 
 \addbibresource{bibliography.bib}
 
@@ -21,12 +21,12 @@
 
 \begin{document}
 
-\pagenumbering{Roman}
+\pagenumbering{Roman}                        % pagenumbering defaults to Roman when starting the document
 \maketitle
 \tableofcontents
 \clearpage
 
-\pagenumbering{arabic}
+\pagenumbering{arabic}                       % Change pagenumbering to Arabic when content begins
 \input{Einleitung}
 \input{Namensgebung}
 \input{TechnischeVarianten}
