@@ -1,6 +1,8 @@
+#+STARTUP: showeverything
+
 * Hausarbeit im Fach Sensoren und Aktoren
 
-Dieses Reporitory dient der Kollaboration und des Managements bei der Erstellung einer Hausarbeit / Präsentation im Modul "Sensoren und Aktoren" bei Professor Reinhard Keller and der Hochschule Esslingen.
+Dieses Reporitory dient der Kollaboration und des Managements bei der Erstellung einer Hausarbeit / Präsentation im Modul "Sensoren und Aktoren" bei Professor Reinhard Keller an der Hochschule Esslingen.
 
 -------------------------------------------------------------------------------
 
