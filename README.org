@@ -8,12 +8,12 @@ Dieses Reporitory dient der Kollaboration und des Managements bei der Erstellung
 
 ** Kapitel und Aufgabenverteilung
 
-|    | Kapitel                                                 | Bearbeiter           | Status      |
-|----+---------------------------------------------------------+----------------------+-------------|
-| 1. | Einleitung                                              | Gemeinsam            | To do       |
-| 2. | Namensgebung und Abgrenzung zum bürstenbehafteten Motor | Tim                  | Done        |
-| 3. | Technische Varianten                                    | Emil                 | To do       |
-| 4. | Typische Anwendungen - Ein Überblick                    | Tim                  | To do       |
-| 5. | Anwendungsbeispiel                                      | Tim                  | To do       |
-| 6. | Fazit                                                   | Gemeinsam            | To do       |
-| 7. | Literaturverzeichnis                                    | Automatisch erstellt | automatisch |
+|    | Kapitel                                                 | Bearbeiter           | Status      | Notizen                               |
+|----+---------------------------------------------------------+----------------------+-------------+---------------------------------------|
+| 1. | Einleitung                                              | Gemeinsam            | To do       |                                       |
+| 2. | Namensgebung und Abgrenzung zum bürstenbehafteten Motor | Tim                  | Done        |                                       |
+| 3. | Technische Varianten                                    | Emil                 | To do       |                                       |
+| 4. | Typische Anwendungen - Ein Überblick                    | Tim                  | Fertig      | Bilder, Zitationen fehlen             |
+| 5. | Anwendungsbeispiel                                      | Tim                  | To do       | Veranschaulichung anhand Kuka Roboter |
+| 6. | Fazit                                                   | Gemeinsam            | To do       |                                       |
+| 7. | Literaturverzeichnis                                    | Automatisch erstellt | automatisch |                                       |
