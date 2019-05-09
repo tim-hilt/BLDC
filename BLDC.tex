@@ -1,8 +1,4 @@
-\documentclass[12pt, a4paper, twoside]{scrreprt}
-
-\KOMAoptions{
-  bibliography=totoc,                        % Prints bibliography in table of contents
-}
+\documentclass[bibliography=totoc, 12pt, a4paper, twoside]{scrreprt}
 
 \usepackage{scrlayer-scrpage}
 \setkomafont{pageheadfoot}{\sffamily\footnotesize}
@@ -20,6 +16,8 @@
 
 \setlength{\parindent}{0pt} % Sets the value, with which each paragraph is indented; deactivated
 \setlength{\parskip}{1em} % Sets the value of space in between two paragraphs
+\linespread{1.25}
+
 
 \addbibresource{bibliography.bib}
 
@@ -27,14 +25,14 @@
 
 \begin{document}
 
-\pagenumbering{Roman}                        % pagenumbering defaults to Roman when starting the document
 \maketitle
+\cleardoublepage
+\pagenumbering{arabic}
 \tableofcontents
 \clearpage
 \listoffigures
-\cleardoublepage
+\clearpage
 
-\pagenumbering{arabic}                       % Change pagenumbering to Arabic when content begins
 \input{Einleitung}
 \input{Namensgebung}
 \input{TechnischeVarianten}
@@ -42,7 +40,7 @@
 % \input{Anwendungsbeispiel}
 \input{Fazit}
 
-\printbibliography%
+\printbibliography[title=Literaturverzeichnis]%
 
 \end{document}
 
