@@ -1,23 +1,22 @@
-\documentclass[bibliography=totoc, 12pt, a4paper, twoside]{scrreprt}
+\documentclass[bibliography=totoc, 12pt, a4paper, twoside]{scrartcl}
 
 \usepackage{scrlayer-scrpage}
 \setkomafont{pageheadfoot}{\sffamily\footnotesize}
 \setkomafont{pagination}{}
 \ofoot*{Seite~\pagemark}
 
-\usepackage[margin=2.5cm]{geometry}          % Sets page margins to be of 2.5cm
-\usepackage[ngerman]{babel}                  % Sets local preferences for german region
-\usepackage[style=numeric]{biblatex} % package for citation management
-\usepackage{svg}                             % included for svg inclusion of HSE-Logo
+\usepackage[margin=2.5cm]{geometry}      % Sets page margins to be of 2.5cm
+\usepackage[ngerman]{babel}              % Sets local preferences for german region
+\usepackage[style=iso-numeric]{biblatex} % package for citation management
+\usepackage{svg}                         % included for svg inclusion of HSE-Logo
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage[font=footnotesize]{caption}
-\usepackage{hyperref}                        % Useful for Links
+\usepackage{hyperref}                    % Useful for Links
 
-\setlength{\parindent}{0pt} % Sets the value, with which each paragraph is indented; deactivated
-\setlength{\parskip}{1em} % Sets the value of space in between two paragraphs
+\setlength{\parindent}{0pt}              % Sets the value, with which each paragraph is indented; deactivated
+\setlength{\parskip}{1em}                % Sets the value of space in between two paragraphs
 \linespread{1.25}
-
 
 \addbibresource{bibliography.bib}
 
@@ -26,6 +25,7 @@
 \begin{document}
 
 \maketitle
+\thispagestyle{empty}
 \cleardoublepage
 \pagenumbering{arabic}
 \tableofcontents
