@@ -1,80 +1,91 @@
-<<<<<<< HEAD
 \section{Technische Varianten}
-=======
-\chapter{Technische Varianten}
-Die Anforderungen an bürstenlöse Permanentmagnetantriebe sind sehr vielfältig. Aus diesem Grund die verschiedenen Antriebsaufgaben werden durch unterschiedliche Motorkonstruktionen gelöst.
-Bei der Auswahl einer geeigneten Motorbauform stehen verschiedenen Kriterien, wie der zu Verfügung stehende Bauplatz, Länge beziehungsweise Durchmesser des Motors. Hierzu werden die Anforderungen auf unterschiedliche Betriebsart festgelegt. Es ist wichtig ob der Motor eine konstante Drehzahl haben sollte. Welsches Drehzahlstellbereich, wie sich Motordynamik verhaltet oder ob der Rundlaufen soll. Eine wichtige Rolle spielt auch mechanische Stabilität und Schwingungsneigung. Im Vordergrund steht auch die Integrationsfähigkeit in eine vorhandene Konstruktion.\parencite[S. 74]{Stölting2011}
 
-In diesem Kapitel werden wichtige Eigenschaften von vier BLDC Motoren näher bertachtet. Es wird einzeln beschreiben wie die Motoren mit internal/external rotor, disk rotor und nutenlose Motoren funktionieren.
-\section{Innenläuferausfürung}
+Die Anforderungen an bürstenlose Permanentmagnetantriebe sind sehr vielfältig. Aus diesem Grund werden die verschiedenen Antriebsaufgaben durch unterschiedliche Motorkonstruktionen gelöst. Bei der Auswahl einer geeigneten Motorbauform stehen verschiedenen Kriterien, wie der zur Verfügung stehende Platz, Länge beziehungsweise Durchmesser des Motors. Hierzu werden die Anforderungen auf unterschiedliche Betriebsarten festgelegt. Es ist wichtig ob der Motor eine konstante Drehzahl haben soll. Welcher Drehzahlstellbereich, wie sich die Motordynamik verhalten oder ob er rund laufen soll. Eine wichtige Rolle spielt auch die mechanische Stabilität und Schwingungsneigung. Zudem steht auch die Integrationsfähigkeit in eine vorhandene Konstruktion im Bereich der Auswahlkriterien \parencite[S.74]{Stölting2011}.
+
+In diesem Kapitel werden wichtige Eigenschaften von vier verschiedenen BLDC-Motorbauformen näher bertachtet. Es wird einzeln beschrieben wie die Motoren mit Internal/External-Rotor, Disk-Rotor und der nutenlose Motor funktionieren.
+
+\subsection{Innenläuferausfürung}
 Die Innenläuferausführung des bürstenlosen Permanentmagnetmotors entspricht den Vorstellungen einer klassischen Motorausführung, wie man sie in überwiegender Anzahl auch bei den Gleichstromkommutatormotoren und Asynchronmotoren vorfindet.
 
-Das Längen/Durchmesserverhältnis der Läuferausführungen variiert in der Praxis sehr stark von sehr schlanken bis hin zu nahezu scheibenförmigen Rotorkonstruktionen. Im allgemeinen erlaubt jedoch eine schlanke Konstruktion eine bessere Ausnutzung des magnetischen Kreises, da die magnetischen Streuflüsse an den Stirnseiten sowie die Wickelkopfverluste weniger stark ins Gewicht fallen. Dank Permanentmagneten lassen sich mit der Innenläuferbauform hohe Drehmoment-Trägheitsmoment-Verhältnisse und damit sehr gute dynamische Eigenschaften erzielen.
-\begin{figure}[H]
+Das Längen/Durchmesserverhältnis der Läuferausführungen variiert in der Praxis sehr stark von schlanken bis hin zu nahezu scheibenförmigen Rotorkonstruktionen. Im Allgemeinen erlaubt jedoch eine schlanke Konstruktion eine bessere Ausnutzung des magnetischen Kreises, da die magnetischen Streuflüsse an den Stirnseiten sowie die Wickelkopfverluste weniger stark ins Gewicht fallen. Dank Permanentmagneten lassen sich mit der Innenläuferbauform hohe Drehmoment-Trägheitsmoment-Verhältnisse und damit sehr gute dynamische Eigenschaften erzielen.
+
+\begin{figure}[h]
     \centering
-    \includegraphics[width=10cm]{./Grafiken/3_1}
-    \caption[Schnittbild eines BLDC`s in Innenläuferausführung]{Schnittbild eines BLDC`s in Innenläuferausführung \parencite[S. 75]{Stölting2011}}
+    \includegraphics[width=8cm]{./Grafiken/3_1}
+    \caption[Schnittbild eines BLDC-Motors in Innenläuferausführung]{Schnittbild eines BLDC-Motors in Innenläuferausführung (Quelle: \parencite[S.75]{Stölting2011})}
     \label{fig:3_1}
   \end{figure}
 
-Einen prinzipiellen Aufbau eines permanentmegnetbestückten Innenläufermotors ist auf dem Abbildung 3.1 zu sehen. Um die in der Regel spröden und im magnatisierten Zustand unter hoher innerer spannung stehenden Permanentmagnete bei großen Fliehkräften vor Zerstörung zu schützen, ist es erforderlich, die Segmente bzw. Ringe mit Hilfe von epoxydharzgetränkten Glas- oder Kohlefasern zu bandagieren. Zum Teil werden hierzu auch dünngezogene magnetisch nicht Stahl- oder Aluminiumhülsen verwendet.
+Der prinzipielle Aufbau eines permanentmagnetbestückten Innenläufermotors ist in der Abbildung \ref{fig:3_1} zu sehen. Werden die spröden und im magnetisierten Zustand unter hoher, innerer Spannung stehenden Permanentmagnete nicht mechanisch geschützt, so werden sie unter Umständen durch große Fliehkräfte zerstört. Um diesen Effekt zu umgehen werden werden die Segmente beziehungsweise Ringe mithilfe von epoxydharzgetränkten Glas- oder Kohlefasern bandagiert. Zum Teil werden hierzu auch dünngezogene magnetische Nichtstahl- oder Aluminiumhülsen verwendet.
 
 Für den magnetischen Rückschluss im Rotor ist es bei kleinen Statornutöffnungen und großen Magnethöhen meist nicht erforderlich, den Magnetträger zu blechen. Dennoch ist dies in vielen Fällen die kostengünstigste Lösung, zumal das Rotorblech aus dem Kern des Statorblechschnittes im gleichen Arbeitsgang gestanzt werden kann. Bei besonders engen räumlichen Verhältnissen wird die Welle zur magnetischen Leitung des Flusses mit verwendet. In diesen Fällen ist jedoch zu beachten, dass im Gegensatz zu den weichmagnetischen Blechen in der Regel keine eng tolerierten magnetischen Daten des Wellenwerkstoffes vorliegen. Wellen sind grundsätzlich für die Führung des magnetischen Flusses nur sehr bedingt geeignet.
 
 Die Anordnung des Rotorrückschlusses auf der Welle führt zu einer steifen Rotorkonstruktion. Die Eigenresonanzfrequenzen des Rotors und damit die schwingungsmäßig kritischen Drehzahlen liegen daher bei Innenläuferausführungen in der Regel deutlich höher als bei vergleichbaren Außenläuferbauformen.
 
-Die Motorverluste (Wicklungs-, Hystrese-, Wirbelstromverluste) entstehen beim bürstenlosen Permanentmagnetmotor im Wesentlichen im Stator. Die resultierende Wärme lässt sich über den äußeren Statorumfang durch eine entsprechende Gehäuse- und Flanschausführung sehr effektiv abführen. Bei guten Wärmeableitung kann daher die Leistungsdichte des Innenläufermotors sehr hohe Werte erreichen. Die Wibelstromverluste in den Magneten sind zum Teil nicht vernachlässigbar klein. Einflussgrößen sind die magnetische Leitfähigkeit des Magnetmaterials, die Nutöffnungen, die zeitliche Änderung und Höhe des ankerfeldes sowie dessen Relativbewegungen zum Rotor.\parencite[S. 75-76]{Stölting2011}
-\section{Aussenläuferausfürung}
-Die höhsten Stückzahlen von bürstenlosen Permanentmagnetmotoren werden in Außenläuferbeuweise gefertigt. Bedeutende Anteile hieran haben elektronische Antriebe für Lüfter, Gebläse, Ventilatoren sowie aus dem Berich der wachsenden Computerindustrie, geregelte Antriebe für Festplatten- und DVD/Blu-ray-Laufwerke.
+Die Motorverluste (Wicklungs-, Hystrese-, Wirbelstromverluste) entstehen beim bürstenlosen Permanentmagnetmotor im Wesentlichen im Stator. Die resultierende Wärme lässt sich über den äußeren Statorumfang durch eine entsprechende Gehäuse- und Flanschausführung sehr effektiv abführen. Bei guter Wärmeableitung kann daher die Leistungsdichte des Innenläufermotors sehr hohe Werte erreichen. Die Wibelstromverluste in den Magneten sind zum Teil nicht vernachlässigbar klein. Einflussgrößen sind die magnetische Leitfähigkeit des Magnetmaterials, die Nutöffnungen, die zeitliche Änderung und Höhe des Ankerfeldes, sowie dessen Relativbewegungen zum Rotor \parencite[S.75--76]{Stölting2011}.
 
-Diesen anwendungen leigen neben den für bürstenlkose Motoren typischen Merkmalen, wie große Lebensdauer und hohe Zuverlässigkeit, spezielle Anforderungen nach Laufruhe, geringen Herstellkosten und insbesondere bei den Computerapplikationen Forderungen nach hohen Drehmomentwerten bei kleinsten Bauraum und geringen Wicklungsverlusten zugrunde.
+\subsection{Außenläuferausfürung}
 
-Die Außenläuferbauweise bietet gegenüber der Innenläuferausführung diesbezüglich einige besondere Vorteile. Das größere Trägheitsmoment des Läufers wirkt sich sehr positiv auf den -Rundlauf und die Laufruhe des antriebes aus. Drehzahlschwankungen, verursacht durch reluktante Störmomente, werden geglättet. Weitere technische Vorteile sind in der größerern zur Verfägung stehende Fläche für die Permanentmagnete, der sich radial nach innen ergebenden Flussverdichtumg des Permanentmagnetfeldes sowie in den kürzeren Wickelköpfen des starors zu sehen.
+Die höchsten Stückzahlen von bürstenlosen Permanentmagnetmotoren werden in Außenläuferbauweise gefertigt. Bedeutende Anteile daran haben elektronische Antriebe für Lüfter, Gebläse, Ventilatoren sowie aus dem Berich der wachsenden Computerindustrie, geregelte Antriebe für Festplatten- und DVD/Blu-Ray-Laufwerke.
+
+Diesen Anwendungen liegen neben den für bürstenlose Motoren typischen Merkmalen, wie hohe Lebensdauer sowie Zuverlässigkeit, spezielle Anforderungen an die Laufruhe, geringe Herstellungskosten und insbesondere bei den Computerapplikationen Forderungen nach hohen Drehmomentwerten bei kleinstem Bauraum und geringen Wicklungsverlusten zugrunde.
+
+Die Außenläuferbauweise bietet gegenüber der Innenläuferausführung diesbezüglich einige besondere Vorteile. Das größere Trägheitsmoment des Läufers wirkt sich sehr positiv auf den Rundlauf und die Laufruhe des Antriebs aus. Drehzahlschwankungen, verursacht durch reluktante Störmomente, werden geglättet. Weitere technische Vorteile liegen in der größeren zur Verfügung stehenden Fläche für die Permanentmagnete. Diese macht sich an der radial nach innen ergebenden Flussverdichtung des Permanentmagnetfeldes sowie in den kürzeren Wickelköpfen des Stators bemerkbar.
 
 Der Außenläufer eignet sich konstruktiv sehr gut für kostengünstige Großserienfertigungen. Das Motorgehäuse wird aus Stator und Rotor gemeinsam gebildet.
-\begin{figure}[H]
+
+\begin{figure}[h]
   \centering
-  \includegraphics[width=10cm]{./Grafiken/3_2}
-  \caption[Schnittbild eines BLDC`s in Außenläuferausführung]{Schnittbild eines BLDC`s in Außenläuferausführung \parencite[S. 76]{Stölting2011}}
+  \includegraphics[width=6.5cm]{./Grafiken/3_2}
+  \caption[Schnittbild eines BLDC-Motors in Außenläuferausführung]{Schnittbild eines BLDC-Motors in Außenläuferausführung (Quelle: \parencite[S. 76]{Stölting2011})}
   \label{fig:3_2}
 \end{figure}
-Der Stator besitzt im Gegensatz zum Innenläufer oft nur einen Flansch mit integriertem Legerrohr. Somit entfällt das passgenaue Anfertigen sowie die fluchtende Montage zweier getrennter Flanschteile. Die beiden Kugellagersitze können in einer Aufspannung präzise gedreht werden. Für eine kostengümstige Fertigung der Wicklugen stehen Flyerwicklungsmaschinen mit äußerst kurzen Fertigungszeiten zur Verfügung. Bei konzentrierten Wicklungen besteht darüber hinaus die Möglichkeit der gleichzeitigen Wicklung verschiedener Stränge. Hohe investitionen für Einzugs- und Wicklungsbandegierautomaten entfallen.
+
+Der Stator besitzt im Gegensatz zum Innenläufer oft nur einen Flansch mit integriertem Legerohr. Somit entfällt das passgenaue Anfertigen sowie die fluchtende Montage zweier getrennter Flanschteile. Die beiden Kugellagersitze können in einer Aufspannung präzise gedreht werden. Für eine kostengünstige Fertigung der Wicklungen stehen Flyerwicklungsmaschinen mit äußerst kurzen Fertigungszeiten zur Verfügung. Bei konzentrierten Wicklungen besteht darüber hinaus die Möglichkeit der gleichzeitigen Wicklung verschiedener Stränge. Hohe Investitionen für Einzugs- und Wicklungsbandagierautomaten entfallen.
 
 In Lüftern, Gebläsen und Ventilatoren wird die Motorelektronik üblicherweise auf einer Leiterplatte an der Flanschinnenseite des Motors integriert und durch den überlappenden Läufer geschützt.
 
-Das Rotorgehäuse besteht bei Lüftern aus einem gezogenen weichmagnetischen Blechkopf, der über eine Niet-, Schweiß- oder Spritzverbindung mit der Welle verbunden ist. Unter einbezug des Topsbodens für die magnetische Flussführung lassen sich kleine Blechdicken und damit niedriege Gewichte realisieren. Die Magnete, bei lufttechnischen Applikationen meist kunststoffgebundene elastische anisotrope Ferritmagnetbänder oder bei Festplattenantrieben NdFeB-Magnetringe, werden in das Rotorgehäuse eingeklebt. Eine Bandage der Magente ist aufgrund des Rotormantels nicht erforderlich. Für extreme Fliehkraftanforderungen müssen zum Teil noch die Magnetseidenränder abgeschützt werden.\parencite[S. 76-77]{Stölting2011}
-\section{Scheibenläuferausfürung}
-Abbildung 3.3 zeigt eine für Audio und Videogeräte bevorzugte Direktantriebsvariante in Einscheibenläuferausfürung mit einer Leiterplatte als Spulen- und Elektronikträger, einem dem Print montierten ferromagnetischen Eisenrückschluss ausgeführt.
-\begin{figure}[H]
+Das Rotorgehäuse besteht bei Lüftern aus einem gezogenen, weichmagnetischen Blechkopf, der über eine Niet-, Schweiß- oder Spritzverbindung mit der Welle verbunden ist. Unter Einbezug des Topsbodens für die magnetische Flussführung lassen sich kleine Blechdicken und damit niedrige Gewichte realisieren. Die Magnete, bei lufttechnischen Applikationen meist kunststoffgebundene, elastische, anisotrope Ferritmagnetbänder oder bei Festplattenantrieben NdFeB-Magnetringe, werden in das Rotorgehäuse eingeklebt. Eine Bandage der Magente ist aufgrund des Rotormantels nicht erforderlich. Für extreme Fliehkraftanforderungen müssen zum Teil noch die Magnetseidenränder abgeschützt werden \parencite[S. 76--77]{Stölting2011}.
+
+\subsection{Scheibenläuferausfürung}
+
+Abbildung~\ref{fig:3_3} zeigt eine für Audio und Videogeräte bevorzugte Direktantriebsvariante in Einscheibenläuferausführung mit einer Leiterplatte als Spulen- und Elektronikträger, welcher in einem printmontierten ferromagnetischen Eisenrückschluss ausgeführt ist.
+
+\begin{figure}[h]
   \centering
-  \includegraphics[width=12cm]{./Grafiken/3_3}
-  \caption[BLDC in Scheibenläuferausfürung]{BLDC in Scheibenläuferausfürung \parencite[S. 77]{Stölting2011}}
+  \includegraphics[width=9cm]{./Grafiken/3_3}
+  \caption[BLDC-Motor in Scheibenläuferausfürung]{BLDC-Motor in Scheibenläuferausführung (Quelle: \parencite[S. 77]{Stölting2011})}%
   \label{fig:3_3}
 \end{figure}
-Für Anwendungen mit niedrigen Drehzahlen und Flussdichten genügt teilweise bereits ein einfaches Stahlblech als Statorjoch. Für höhere Ansprüche wird der ferromagnetische Rückschluss zur Begrenzung der Wirbelstromverluste mit einem kunststoffgebundenen Eisenpulververbundwerkstoff, spiralförmig geblecht oder auch als mitrotierender (massiver) Rückschluss ausgebildet.
-Mit dem bürstenlosen Scheibenläufer lassen sich in der dargestellten nutenlosen Ankerausfürung in Verbindung mit einem hohen Rotorträgheitsmoment sehr gute Rundlaufwerte erzielen. Der Stator kann auch völlig eisenlos gefertigt werden, wenn die kunstoffumspritzte und damit selbsttragende Wicklung zwischen zwei über die Welle verbundenen Rotorscheiben angebracht ist. Die 2-Scheiben-Läuferausfürung ist hierbei entweder symmetrisch mit zwei Permanentmagnetrotorscheiben oder asymmetrisch mit einer Permanetmagnetrotor- und einer Rückschlussscheibe ohne Magnete realisiert. Im Gegensatz zu der 1-Scheibenläuferbauweise treten hier keine technischen Problemstellungen hinsichtlich der dreidimensionalen Flussführung im Statoreisen sowie der hohen Lagerbelastung durch axiale Zugkräfte zwischen Stator und Rotor auf.
-Wicklungsseitig sind bei hohen Drehzahlen und hohen Polzahlen im Unterschied zu genuteten Wicklungsausführungen auch die durch das Permanentmagnetfeld erzeugte Wirbelstromverluste in den Spulendrähten (insbesondere bei großen Leiterquerschnitten) zu beachten.
-Der Scheibenläufer eignet sich sehr gut für eine Integration von Motor und Motorelektronik und ermöglicht eine sehr kompakte Flachbauweise.\parencite[S. 77-78]{Stölting2011}
-\section{Nutenlosen BLDC}
-Die bürstenlosen Premanentmagnetmotoren mit nutenloser zylindrischer Wicklungsausführung sind den Glockenankerkommutatormotoren nachgebildet (s. Abbildung 3.4). Die im Allgemeinen dreisträngige Rauten- oder Schrägwicklung ist im Luftspalt des Motors angebracht und wird in der Konstriktionsvariante von Abbildung 3.4 innen von einem auf der Welle angebrachten Permanentmagneten und außen von einer ebenfalls auf der Welle montierten massiv ausgeführten Eisenjochglocke umschlossen. Durch die selbsttragende nutenlose Wicklung und den mitrotierenden Eisenrückschluss entstehen nahezu keine Eisenverluste im Motor. Dies wirkt sich insbesondere bei hohen Drehzahlen sehr günstig auf den Wirkungsgrad aus.
-\\
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=14cm]{./Grafiken/3_4}
-  \caption[Prinzipieller Aufbau des Glockenankerkommutatormotor]{Prinzipieller Aufbau des Glockenankerkommutatormotor \parencite[S. 30]{Stölting2011}}
-  \label{fig:3_4}
-  \includegraphics[width=14cm]{./Grafiken/3_5}
-  \caption[Prinzipieller Aufbau des nutenlosen BLDC]{Prinzipieller Aufbau des nutenlosen BLDC \parencite[S. 78]{Stölting2011}}
-  \label{fig:3_5}
+
+Für Anwendungen mit niedrigen Drehzahlen und Flussdichten genügt teilweise bereits ein einfaches Stahlblech als Statorjoch. Für höhere Ansprüche wird der ferromagnetische Rückschluss zur Begrenzung der Wirbelstromverluste mit einem kunststoffgebundenen Eisenpulververbundwerkstoff spiralförmig geblecht oder auch als mitrotierender (massiver) Rückschluss ausgebildet.
+
+Mit dem bürstenlosen Scheibenläufer lassen sich in der dargestellten nutenlosen Ankerausführung in Verbindung mit einem hohen Rotorträgheitsmoment sehr gute Rundlaufwerte erzielen. Der Stator kann auch völlig eisenlos gefertigt werden, wenn die kunstoffumspritzte und damit selbsttragende Wicklung zwischen zwei über die Welle verbundenen Rotorscheiben angebracht ist. Die 2-Scheiben-Läuferausführung ist hierbei entweder symmetrisch mit zwei Permanentmagnetrotorscheiben oder asymmetrisch mit einer Permanetmagnetrotor- und einer Rückschlussscheibe ohne Magnete realisiert. Im Gegensatz zu der 1-Scheibenläuferbauweise treten hier keine technischen Problemstellungen hinsichtlich der dreidimensionalen Flussführung im Statoreisen sowie der hohen Lagerbelastung durch axiale Zugkräfte zwischen Stator und Rotor auf. Wicklungsseitig sind bei hohen Drehzahlen und hohen Polzahlen im Unterschied zu genuteten Wicklungsausführungen auch die durch das Permanentmagnetfeld erzeugte Wirbelstromverluste in den Spulendrähten (insbesondere bei großen Leiterquerschnitten) zu beachten.
+
+Der Scheibenläufer eignet sich sehr gut für eine Integration von Motor und Motorelektronik und ermöglicht eine sehr kompakte Flachbauweise \parencite[S. 77--78]{Stölting2011}.
+
+\subsection{Nutenloser BLDC-Motor}
+
+Die bürstenlosen Premanentmagnetmotoren mit nutenloser, zylindrischer Wicklungsausführung sind den Glockenankerkommutatormotoren nachgebildet (s. Abbildung~\ref{fig:3_4}). Die im Allgemeinen dreisträngige Rauten- oder Schrägwicklung ist im Luftspalt des Motors angebracht und wird in der Konstruktionsvariante von Abbildung~\ref{fig:3_4} innen von einem auf der Welle angebrachten Permanentmagneten und außen von einer ebenfalls auf der Welle montierten massiv ausgeführten Eisenjochglocke umschlossen. Durch die selbsttragende nutenlose Wicklung und den mitrotierenden Eisenrückschluss entstehen nahezu keine Eisenverluste im Motor. Dies wirkt sich insbesondere bei hohen Drehzahlen sehr günstig auf den Wirkungsgrad aus.
+
+\begin{figure}[h]
+  \begin{minipage}{.48\linewidth}
+    \centering
+    \includegraphics[width=\textwidth]{./Grafiken/3_4}
+    \caption[Prinzipieller Aufbau des Glockenankerkommutatormotor]{Prinzipieller Aufbau des Glockenankerkommutatormotor (Quelle: \parencite[S. 30]{Stölting2011})}%
+    \label{fig:3_4}
+  \end{minipage}\hfill%
+  \begin{minipage}{.48\linewidth}
+    \centering
+    \includegraphics[width=\textwidth]{./Grafiken/3_5}
+    \caption[Prinzipieller Aufbau des nutenlosen BLDC-Motors]{Prinzipieller Aufbau des nutenlosen BLDC-Motors (Quelle: \parencite[S. 78]{Stölting2011})}%
+    \label{fig:3_5}
+  \end{minipage}
 \end{figure}
-Die Lebensdauer der bürstenlosen Motoren mit freitragender Wicklung wird im Vergleich zu den Glockenankerkommutatormotoren lediglich noch durch die Lager und die Kommutierungselektronik bestimmt. Die Elektronik ist in einigen Ausfügrungen im Rückteil des Motorgehäuses integriert. 
-Sowohl die Wicklungsausführung als auch die diametrale Magnetisierung der zweipoligen Zylindermagnet führen zu sinusförmigen Flussverkettungen und damit zu sinusförmigen induzierten Polradspannungen. Von daher ist hinsichtlich der Gleichförmigkeit des Drehmomentes eine sinusförmige Ansteuerung empfehlenswert. Im Gegensatz zu den Glockenankerkommutatormotoren, die aufgrund der hohen Spulenzahl trotz Blockkommutierung sehr geringe Drehmomentwelligkeitswerte erreichen, kann sich bei der nur dreisträngigen bürstenlosen Ausführung die Blockkommutierung für sehr anspruchsvolle Servo-Applikationen u.U. störend auswirken. Aus Kostengründen sowie aufgrund des beschränkten Einbauvolumens für Elektronik und Sensorik wird jedoch in vielen Anwendungen die Blockstromkommutierung der sinusförmigen Ansteuerung vorgezogen. Mit steigender Drehzahl verringern sich Unterschiede zwischen Sinus- und Blockkommutierung in den Drehzahlschwankungen aufgrund des glättenden Einflusses des Rotorträgheitsmomentes. \parencite[S. 78]{Stölting2011}
 
->>>>>>> 957891df9f65af2004bf2b3e6b000f30b2f6fcbf
+Die Lebensdauer der bürstenlosen Motoren mit freitragender Wicklung wird im Vergleich zu den Glockenankerkommutatormotoren lediglich durch die Lager und die Kommutierungselektronik bestimmt. Die Elektronik ist in einigen Ausführungen im Rückteil des Motorgehäuses integriert.
 
-% https://www.microchip.com/design-centers/motor-control-and-drive/motor-types/brushless-dc-motor
-% https://www.zikodrive.com/support/zikouniversity-motor-control-theory-application/different-types-of-brushless-dc-bldc-motor/
-
+Sowohl die Wicklungsausführung als auch die diametrale Magnetisierung der zweipoligen Zylindermagnet führen zu sinusförmigen Flussverkettungen und damit zu sinusförmigen induzierten Polradspannungen. Dementsprechend ist hinsichtlich der Gleichförmigkeit des Drehmomentes eine sinusförmige Ansteuerung empfehlenswert. Im Gegensatz zu den Glockenankerkommutatormotoren, die aufgrund der hohen Spulenzahl trotz Blockkommutierung sehr geringe Drehmomentwelligkeitswerte erreichen, kann sich bei der nur dreisträngigen bürstenlosen Ausführung die Blockkommutierung für sehr anspruchsvolle Servo-Applikationen unter Umständen störend auswirken. Aus Kostengründen sowie aufgrund des beschränkten Einbauvolumens für Elektronik und Sensorik wird jedoch in vielen Anwendungen die Blockstromkommutierung der sinusförmigen Ansteuerung vorgezogen. Mit steigender Drehzahl verringern sich Unterschiede zwischen Sinus- und Blockkommutierung in den Drehzahlschwankungen aufgrund des glättenden Einflusses des Rotorträgheitsmomentes \parencite[S. 78]{Stölting2011}.
 
 %%% Local Variables:
 %%% mode: latex

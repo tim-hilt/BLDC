@@ -1,4 +1,4 @@
-\chapter{Typische Anwendungen des BLDC-Motors}
+\section{Typische Anwendungen des BLDC-Motors}
 
 Viele Funktionen, die früher zum Aufgabengebiet der bürstenbehafteten Motoren gehörten werden mittlerweile von bürstenlosen Gleichstrommotoren erfüllt. Jedoch hindern Kosten und hoher Steuerungsaufwand den Motorentyp daran, seinen Vorgänger vollständig abzulösen.
 
@@ -6,25 +6,60 @@ Trotzdem dominieren BLDC-Motoren heutzutage besonders in Anwendungsgebieten, bei
 
 \subsection{Überblick}
 
-\paragraph{Fortbewegungsmittel:} Mittlerweile finden sich bürstenlose Gleichstrommotoren in radgetriebenen Fahrzeugen jeglicher Größe. Vom elektrisch untertützten Fahrrad \parencite[vgl.][S.6]{Xia2012} bis zum elektrisch angetriebenen Lastkraftwagen werden BLDC-Motoren in nahezu jedem Segment der Fortbewegungs- und Transportmittel eingesetzt. Hier kann besonders von der hohen Effizienz des Motors profitiert werden, da durch diese Eigenschaft höhere Batterielaufzeiten erzielt werden können \parencite[vgl.][S.4]{Xia2012}. Da Elektromotoren hier nicht nur für den Antrieb des Fahrzeugs, sondern auch für Fensterheber, Airbags, Scheibenwischer, Schließmechanismen und vieles mehr genutzt werden können werden in einem durchschnittlichen Personenkraftwagen Dutzende, wenn nicht gar hunderte Elektromotoren verbaut \parencite[vgl.][S.4]{Xia2012}.
+\paragraph{Fortbewegungsmittel:} Mittlerweile finden sich bürstenlose Gleichstrommotoren in radgetriebenen Fahrzeugen jeglicher Größe. Vom elektrisch untertützten Fahrrad \parencite[S.6]{Xia2012} bis zum elektrisch angetriebenen Lastkraftwagen werden BLDC-Motoren in nahezu jedem Segment der Fortbewegungs- und Transportmittel eingesetzt. Eine mögliche Anwendung ist die Ausführung als Radnabenmotor, welche in Abbildung \ref{fig:Radnabenmotor} dargestellt ist.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=10cm]{Radnabenmotor}
+  \caption[Radnabenmotor]{Radnabenmotor (Quelle: \parencite[S.132]{Babiel2014})}
+  \label{fig:Radnabenmotor}
+\end{figure}
+Hier kann besonders von der hohen Effizienz des Motors profitiert werden, da durch diese Eigenschaft höhere Batterielaufzeiten erzielt werden können \parencite[S.4]{Xia2012}. Da Elektromotoren hier nicht nur für den Antrieb des Fahrzeugs, sondern auch für Fensterheber, Airbags, Scheibenwischer, Schließmechanismen und vieles mehr genutzt werden können werden in einem durchschnittlichen Personenkraftwagen Dutzende, wenn nicht gar hunderte Elektromotoren verbaut \parencite[S.4]{Xia2012}.
 
-\paragraph{Batteriebetriebenes Werkzeug:} Bei Anwendungen im handwerklichen Alltag werden bürstenlose Motoren besonders in Sägen, Bohrmaschinen, Laubgebläsen, Rasentrimmern und vielem mehr verwendet. Von vielen der genannten Maschinen finden sich auf der Baustelle kabelgebundene Versionen, die jedoch einige Nachteile mit sich bringen. Nennenswert wären zum Beispiel Kabelmanagement und die damit verbundene Not einer Stromversorgung, die bei einem Neubau oftmals erst durch einen kommunalen Stromverteiler gelegt werden muss. Durch die Verwendung von BLDC-Motoren verringert sich die Leistungsanforderung des Geräts drastisch, sodass nun Geräte mit Batterieversorgung entwickelt und gebaut werden können, die an einem zentralen Punkt der Baustelle nachgeladen werden können, ohne ein kompliziertes Netzwerk aus Stromverteilern und Verlängerungskabeln aufbauen zu müssen. Ein weiterer Vorteil liegt in der Gewichtsersparnis der Maschinen, denn durch die höhere Leistungsdichte eines BLDC-Motors kann ein kleinerer Motor bei selber Leistung verwendet werden.
+\paragraph{Batteriebetriebenes Werkzeug:} Bei Anwendungen im handwerklichen Alltag werden bürstenlose Motoren besonders in Sägen, Bohrmaschinen, Laubgebläsen, Rasentrimmern und vielem mehr verwendet. Von vielen der genannten Maschinen finden sich auf der Baustelle kabelgebundene Versionen, die jedoch einige Nachteile mit sich bringen. Nennenswert wären zum Beispiel Kabelmanagement und die damit verbundene Not einer Stromversorgung, die bei einem Neubau oftmals erst durch einen kommunalen Stromverteiler gelegt werden muss. Durch die Verwendung von BLDC-Motoren verringert sich die Leistungsanforderung des Geräts drastisch, sodass nun Geräte mit Batterieversorgung entwickelt und gebaut werden können, die an einem zentralen Punkt der Baustelle nachgeladen werden können, ohne ein kompliziertes Netzwerk aus Stromverteilern und Verlängerungskabeln aufbauen zu müssen. Ein weiterer Vorteil liegt in der Gewichtsersparnis der Maschinen, denn durch die höhere Leistungsdichte eines BLDC-Motors kann ein kleinerer Motor bei selber Leistung verwendet werden. In der untenstehenden Abbildung \ref{fig:Vergleich} wird zudem der Größenunterschied gut sichtbar. Das bürstenlose Modell (rechts) kann weitaus kompakter gebaut werden und verfügt trotzdem über 50\% mehr Drehmoment (\SI{60}{\newton\meter})als das bürstenbehaftete Modell (\SI{40}{\newton\meter})
 
-\paragraph{Haushaltsgeräte:} In der letzten Zeit wurden weltweit jährlich etwa 30\% mehr Elektromotoren in Haushaltsgeräten verbaut. Mit dem steigenden Lebensstandard der Menschen und dem wachsenden Umweltbewusstsein sind bürstenlose Gleichstrommotoren immer mehr das Mittel der Wahl im alltäglichen Gebrauch; so auch im Haushalt \parencite[vgl.][S.6]{Xia2012}. Lüfter sind ein Anwendungsgebiet, in dem man mittlerweile ausschließlich bürstenlose Gleichstrommotoren vorfindet. Auch hier wird insbesondere von der Leistungsersparnis profitiert. Ein weiterer Vorteil im Segment der Lüfter und Ventilatoren (auch Haartrockner, Heizlüfter etc.) besteht in der Tatsache, dass die Lautstärke des Geräts abnimmt, da keine mechanische Reibung bei der Kommutation entsteht.
+\begin{figure}[H]
+  \centering
+  %------------------------------
+  \begin{minipage}{.49\textwidth}
+    \centering
+    \includegraphics[height=5cm]{Makita_Bürstenbehaftet}
+  \end{minipage}\hfill%
+  \begin{minipage}{.49\textwidth}
+    \centering
+    \includegraphics[height=5cm]{Makita_Bürstenlos}
+  \end{minipage}
+  \caption[Vergleich Akkubohrschrauber]{Vergleich zweier Akku-Bohrschrauber der Firma Makita. Links: Modell DDF451, bürstenbehafteter Antrieb, Gehäuselänge: \SI{238}{\milli\meter}. Rechts: Modell DDF481, bürstenloser Antrieb, Gehäuselänge: \SI{205}{\milli\meter}. (Quelle: Fa. Makita)}
+  \label{fig:Vergleich}
+\end{figure}
+
+\paragraph{Haushaltsgeräte:} In der letzten Zeit wurden weltweit jährlich etwa 30\% mehr Elektromotoren in Haushaltsgeräten verbaut. Mit dem steigenden Lebensstandard der Menschen und dem wachsenden Umweltbewusstsein sind bürstenlose Gleichstrommotoren immer mehr das Mittel der Wahl im alltäglichen Gebrauch; so auch im Haushalt \parencite[S.6]{Xia2012}. Lüfter sind ein Anwendungsgebiet, in dem man mittlerweile ausschließlich bürstenlose Gleichstrommotoren vorfindet. Auch hier wird insbesondere von der Leistungsersparnis profitiert. Ein weiterer Vorteil im Segment der Lüfter und Ventilatoren (auch Haartrockner, Heizlüfter etc.) besteht in der Tatsache, dass die Lautstärke des Geräts abnimmt, da keine mechanische Reibung bei der Kommutation entsteht.
 
 \paragraph{Modellfluggeräte:} Das Wachstum der Popularität von ferngesteuerten Modellfluggeräten --- insbesondere Drohnen und Quadrokoptern --- wurde maßgeblich durch die Entwicklung des BLDC-Motors angestoßen. Im Bereich der Fluggeräte wurden seither stets kleine Verbrennungsmotoren eingesetzt. In einigen Staaten wurden Verbrennungsmotoren für diese Anwendung mittlerweile verboten, da die Lärmverschmutzung als zu hoch eingestuft wurde. Auch hier zeigen sich die Vorteile des bürstenlosen Gleichstrommotors. Zusätzlich sorgt die Einsetzung dieses neuen Motortyps für eine höhere Reichweite, da eine kleineres Verhältnis von Gewicht und Leistung vorliegt.
 
-\paragraph{Industrielle Anwendungen:} Im industriellen Umfeld spielt der BLDC-Motor insbesondere in der Produktion, sowie der industriellen Automatisierung eine große Rolle. Bürstenlose Motoren sind für diese Funktionen besonders gut geeignet, da sie sich durch eine hohe Leistungsdichte, hohe Effizienz, große Drehzahlbereiche und niederen Wartungsaufwand auszeichnen. In der Produktion werden sie vor allem für Bewegungsregelung, Positionierung und Aktorik verwendet.
+\paragraph{Industrielle Anwendungen:} Im industriellen Umfeld spielt der BLDC-Motor insbesondere in der Produktion, sowie der industriellen Automatisierung eine große Rolle. Bürstenlose Motoren sind für diese Funktionen besonders gut geeignet, da sie sich durch eine hohe Leistungsdichte, hohe Effizienz, große Drehzahlbereiche und niederen Wartungsaufwand auszeichnen \parencite[S.8]{Xia2012}. In der Produktion werden sie vor allem für Bewegungsregelung, Positionierung und Aktorik verwendet.
 
 \subparagraph{Bewegungsregelung:} Bürstenlose Gleichstrommotoren werden häufig als Treiber für Pumpen, Lüfter und Spindeln, beispielsweise in CNC-Fräsen eingesetzt. Aufgrund ihrer Konstruktion verfügen BLDC-Motoren über gute thermische Eigenschaften und eine hohe Effizienz. Hinzu kommt die niederere Massenträgheit im Vergleich mit dem bürstenbehafteten Motor. All dies sind Eigenschaften, die den BLDC-Motor für dieses Einsatzgebiet prädestinieren.
 
-\subparagraph{Positionierungs- und Aktuatoriksysteme:} In diesem Anwendungsgebiet trifft man besonders bürstenlose Servo- oder Schrittmotoren an, beispielsweise in Industrierobotern. Darüber hinaus können bürstenlose Gleichstrommotoren auch dazu verwendet werden, Linearaktuatoren anzutreiben.
+\subparagraph{Positionierungs- und Aktuatoriksysteme:} BLDC-Motoren werden als Aktorik- und Positionierungssysteme in der Industrie eingesetzt \parencite[S.159]{Gopal2002}. In diesem Anwendungsgebiet trifft man besonders bürstenlose Servo- oder Schrittmotoren an, beispielsweise in Industrierobotern. Darüber hinaus können bürstenlose Gleichstrommotoren auch dazu verwendet werden, Linearaktuatoren anzutreiben \parencite[S.91]{Zhang2013} (s. dazu auch Abbildung \ref{fig:Linearantrieb}).
+
+\begin{figure}[h]
+  \begin{minipage}{.49\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Linearantrieb}
+    \caption[Linearantrieb mit BLDC-Motor]{Linearantrieb mit BLDC-Motor (Quelle: Fa. Banggood)}
+    \label{fig:Linearantrieb}
+  \end{minipage}\hfill%
+  \begin{minipage}{.49\textwidth}
+    \centering
+    \includegraphics[height=7cm]{Industrieroboter}
+    \caption[Industrieroboter KR 3 Agilus]{Industrieroboter KR 3 Agilus (Quelle: Fa. Kuka)}
+    \label{fig:Industrieroboter}
+  \end{minipage}
+\end{figure}
 
 Im nächsten Abschnitt wird der Einsatz von bürstenlosen Gleichstrommotoren exemplarisch am Beispiel eines Industrierobotersystems vorgestellt.
 
 \subsection{Ausführliches Anwendungsbeispiel}
-
-
 
 %%% Local Variables:
 %%% mode: latex
