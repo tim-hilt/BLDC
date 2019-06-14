@@ -15,7 +15,7 @@ Trotzdem dominieren BLDC-Motoren heutzutage besonders in Anwendungsgebieten, bei
 \end{figure}
 Hier kann besonders von der hohen Effizienz des Motors profitiert werden, da durch diese Eigenschaft höhere Batterielaufzeiten erzielt werden können \parencite[S. 4]{Xia2012}. Da Elektromotoren hier nicht nur für den Antrieb des Fahrzeugs, sondern auch für Fensterheber, Airbags, Scheibenwischer, Schließmechanismen und vieles mehr genutzt werden können werden in einem durchschnittlichen Personenkraftwagen Dutzende, wenn nicht gar hunderte Elektromotoren verbaut \parencite[S. 4]{Xia2012}.
 
-\paragraph{Batteriebetriebenes Werkzeug:} Bei Anwendungen im handwerklichen Alltag werden bürstenlose Motoren besonders in Sägen, Bohrmaschinen, Laubgebläsen, Rasentrimmern und vielem mehr verwendet. Von vielen der genannten Maschinen finden sich auf der Baustelle kabelgebundene Versionen, die jedoch einige Nachteile mit sich bringen. Nennenswert wären zum Beispiel Kabelmanagement und die damit verbundene Not einer Stromversorgung, die bei einem Neubau oftmals erst durch einen kommunalen Stromverteiler gelegt werden musS.  Durch die Verwendung von BLDC-Motoren verringert sich die Leistungsanforderung des Geräts drastisch, sodass nun Geräte mit Batterieversorgung entwickelt und gebaut werden können, die an einem zentralen Punkt der Baustelle nachgeladen werden können, ohne ein kompliziertes Netzwerk aus Stromverteilern und Verlängerungskabeln aufbauen zu müssen. Ein weiterer Vorteil liegt in der Gewichtsersparnis der Maschinen, denn durch die höhere Leistungsdichte eines BLDC-Motors kann ein kleinerer Motor bei selber Leistung verwendet werden. In der untenstehenden Abbildung \ref{fig:Vergleich} wird zudem der Größenunterschied gut sichtbar. Das bürstenlose Modell (rechts) kann weitaus kompakter gebaut werden und verfügt trotzdem über 50\% mehr Drehmoment (\SI{60}{\newton\meter})als das bürstenbehaftete Modell (\SI{40}{\newton\meter})
+\paragraph{Batteriebetriebenes Werkzeug:} Bei Anwendungen im handwerklichen Alltag werden bürstenlose Motoren besonders in Sägen, Bohrmaschinen, Laubgebläsen, Rasentrimmern und vielem mehr verwendet. Von vielen der genannten Maschinen finden sich auf der Baustelle kabelgebundene Versionen, die jedoch einige Nachteile mit sich bringen. Nennenswert wären zum Beispiel Kabelmanagement und die damit verbundene Not einer Stromversorgung, die bei einem Neubau oftmals erst durch einen kommunalen Stromverteiler gelegt werden musS.  Durch die Verwendung von BLDC-Motoren verringert sich die Leistungsanforderung des Geräts drastisch, sodass nun Geräte mit Batterieversorgung entwickelt und gebaut werden können, die an einem zentralen Punkt der Baustelle nachgeladen werden können, ohne ein kompliziertes Netzwerk aus Stromverteilern und Verlängerungskabeln aufbauen zu müssen. Ein weiterer Vorteil liegt in der Gewichtsersparnis der Maschinen, denn durch die höhere Leistungsdichte eines BLDC-Motors kann ein kleinerer Motor bei selber Leistung verwendet werden. In der untenstehenden Abbildung \ref{fig:Vergleich} wird zudem der Größenunterschied gut sichtbar. Das bürstenlose Modell (rechts) kann weitaus kompakter gebaut werden und verfügt trotzdem über 50\% mehr Drehmoment (\SI{60}{\newton\meter})als das bürstenbehaftete Modell (\SI{40}{\newton\meter}). Auf das Modell DDF481 im Bild rechts, welches mit einem bürstenlosen Motor ausgestattet ist soll im nächsten Abschnitt noch detaillierter eingegangen werden.
 
 \begin{figure}[H]
   \centering
@@ -57,9 +57,39 @@ Hier kann besonders von der hohen Effizienz des Motors profitiert werden, da dur
   \end{minipage}
 \end{figure}
 
-Im nächsten Abschnitt wird der Einsatz von bürstenlosen Gleichstrommotoren exemplarisch am Beispiel eines Industrierobotersystems vorgestellt.
+Im nächsten Abschnitt wird der Einsatz von bürstenlosen Gleichstrommotoren exemplarisch anhand eines Akkubohrschraubers beschrieben.
 
 \subsection{Ausführliches Anwendungsbeispiel}
+
+\glqq{}Die Marke Makita steht weltweit für professionelle und qualitativ hochwertige Akku-, Elektro- und Benzin-Werkzeuge. Gerade im Akku-Bereich setzt Makita immer wieder neue Maßstäbe. Auch in Deutschland ist Makita seit 1977 vertreten und verfügt über ein riesiges Produktsortiment und das passende Zubehör\grqq{} (\url{www.makita.de}). Im Produktportfolio findet sich unter anderem der Akkubohrschrauber DDF481 --- Makitas stärkstes Gerät in diesem Segment. Der DDF481 wird von einem bürstenlosen Gleichstrommotor angetrieben. Mithilfe dieses Antriebs gelang es Makita, die Gehäuselänge trotz einer höheren Leistung maßgeblich zu verkürzen. Somit benötigt der DDF481 weniger Stauraum im Koffer eines Handwerkers oder in der Werkstatt eines Privathaushalts. Zudem kann in engeren Spalten gebohrt und geschraubt werden.
+
+Das Gerät wird von einem bürstenlosen Gleichstrommotor in Innenläuferausführung angetrieben, der Drehmomente von bis zu \SI{110}{\newton\meter} erlaubt. Der Motor wird von Makita selbst hergestellt.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=.5\textwidth]{Makita_DDF481_Steuerung}
+  \caption{Steuerung des DDF481 (Quelle: YouTube-Kanal \glqq{}ave\grqq{})}
+  \label{fig:Steuerung}
+\end{figure}
+
+In Abbildung~\ref{fig:Steuerung} ist das Steuerungsmodul des Bohrschraubers zu sehen. Das Modul selbst ist in Epoxidharz vergossen, um die Elektronik vor Schmutz und Feuchtigkeit zu schützen. Das Elektronikmodul misst den vom Schalter (links im Bild) abgegriffenen Widerstandswert und berechnet daraus die zu liefernde Motorendrehzahl. Diese mit Hilfe der integrierten Sensorik des Motors vom Elektronikmodul geregelt.
+
+\begin{figure}[h]
+  \begin{minipage}{.48\textwidth}
+    \centering
+    \includegraphics[height=5cm]{Makita_DDF481_Feld}
+    \caption{Vorderansicht des Motors (Quelle: YouTube-Kanal \glqq{}ave\grqq{})}
+    \label{fig:Feld}
+  \end{minipage}\hfill%
+  \begin{minipage}{.48\textwidth}
+    \centering
+    \includegraphics[height=5cm]{Makita_DDF481_Anker}
+    \caption{Anker des Motors (Quelle: YouTube-Kanal \glqq{}ave\grqq{})}
+    \label{fig:Anker}
+  \end{minipage}
+\end{figure}
+
+Der Motor verfügt über drei Polpaare (siehe Abbildung~\ref{fig:Feld}), welche nacheinander beschaltet werden. In Abbildung~\ref{fig:Anker} ist der Permanentmagnetkern des Motors zu sehen. Hier wird deutlich, dass es dieser Motor in Innenläuferausführung aufgebaut ist. Die gefächerte Struktur des hinteren Ankerbereichs --- zu sehen in Abbildung~\ref{fig:Anker} --- sorgt für zusätzlich kühlende Luftströmungen während des Betriebs.
 
 %%% Local Variables:
 %%% mode: latex
